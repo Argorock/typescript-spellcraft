@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Spell Crafter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="index.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Spell Crafter</h1>
+
+        <div class="spell-crafter">
+
+            <section class="casting-type">
+                <h2>Casting Type</h2>
+                <div id="casting-buttons"></div>
+            </section>
+
+            <section class="elemental-type">
+                <h2>Element</h2>
+                <div id="element-buttons"></div>
+            </section>
+
+            <section class="behavior-type">
+                <h2>Behaviors</h2>
+                <div id="behavior-buttons"></div>
+            </section>
+
+            <section>
+                <h2>Selected Components</h2>
+                <ul id="selected-components"></ul>
+                <p id="error-message" style="color: red;"></p>
+            </section>
+
+        </div>
+
+        <button onclick="createSpell()">Create Spell</button>
+
+        <pre id="output"></pre>
+    </main>
+
+</body>
+</html>
